@@ -15,7 +15,9 @@ const config = { attributes: true, childList: true, subtree: true, attributeFilt
 // Callback function to execute when mutations are observed
 const callback = function(mutationsList, observer) {
     // Use traditional 'for loops' for IE 11
-    for(let mutation of mutationsList) { 
+    //for(let mutation of mutationsList) { 
+   let mutation = 0; 
+      for(mutation=0; mutation<mutationsList.length; mutation++){
         //if(mutation.type === 'attributes' || mutation.type === 'childList' ){
           var contentHeight = document.querySelector('body > div').scrollHeight;
          if(contentHeight !== oldHeight){
