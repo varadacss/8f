@@ -1,4 +1,4 @@
-(function () {
+/*(function () {
   var CONST = {
     PARAM_CHANGE: "ParamChange",
     BODY_HEIGHT: "bodyHeight"
@@ -62,7 +62,7 @@
       }
     }, 1000);
   }
-  */
+  * /
   function initUrlUpdateListener() {
     if (window.addEventListener) {
       window.addEventListener('load', listener);
@@ -91,3 +91,4 @@
   }
   initUrlUpdateListener();
   }());
+*/
